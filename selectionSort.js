@@ -1,8 +1,6 @@
 function selectionsort(arr){
    
     for(let i =0;i<arr.length-1;i++){
-
-   
         let minindex = i;
     for(let j = i+1;j<arr.length;j++){
         if(arr[j]<arr[minindex]){
@@ -14,9 +12,11 @@ function selectionsort(arr){
         arr[i]=arr[minindex];
         arr[minindex]=temp;
     }
-    return arr;
+   
 }
+return arr;
 }
+
 
 const arr =[5,4,6,7,8,2];
 console.log(selectionsort(arr));
