@@ -18,5 +18,5 @@ return arr;
 }
 
 
-const arr =[5,4,6,7,8,2];
+const arr =[6,8,7,6,8,7];
 console.log(selectionsort(arr));

@@ -6,3 +6,14 @@ function fibonacii(n){
    return fib;
 }
 console.log(fibonacii(10))
+
+
+
+function fibonaccci(n) {
+   if (n <= 1)
+       return n;{
+     
+   return fibonaccci(n - 1) + fibonaccci(n - 2);
+}
+}
+console.log(fibonaccci(6)); // Output: 8
