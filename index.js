@@ -57,3 +57,26 @@
 // }
 // const arr = [1,2,3,4,5];
 // console.log(binarysearch(arr,1));
+// const str = "yashkatara"
+// console.log(str.length);
+
+function fetch(id){
+const createobj = {
+    1:'admin',
+    2:'Subscriber',
+    3:'moderator',
+    
+}
+return createobj [id]|| 'User'
+}
+console.log(fetch(1));
+console.log(fetch(2));
+console.log(fetch(4));
+
+
+
+function sum (a,b,c){
+    return a+b+c;
+}
+const num = [1,2,3];
+console.log(sum(...num));
