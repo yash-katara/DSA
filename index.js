@@ -80,3 +80,83 @@ function sum (a,b,c){
 }
 const num = [1,2,3];
 console.log(sum(...num));
+
+
+const user = {
+    'Name':'admin',
+    'age':'21',
+   ' clas':'gen',
+    
+};
+const keys = ['Name','age'];
+console.log(user[keys[0]]);
+
+
+
+// a +=4 -> a = a+4;
+// ++a and --a -> it will add and substract first then print
+// a *=4 -> a = a*4;
+// a -=4 -> a = a-4;
+// && for both true
+// || if one or both true then true otherwise false in both false 
+// in while loop we write the only stopping condition and initialization will bw declared before of the while loop and code will be in while loop
+// slice method give a peice of array slice(strt index, end index);
+// splice method change an original array splice(strtindex, deletecount, new element)
+
+let sum1 =0;
+for(let i=1;i<=10;i++){
+    sum1 += i;
+
+}
+console.log(sum1);
+
+//Whie loop
+let j=0
+while(j<=10){
+    console.log(j);
+    j++; 
+}
+
+// for-of loop is used for string and object
+// for-in loop is used for array and object-keys
+let str = "yashkatara"
+for(let k of str){
+    console.log(k);
+    
+}
+
+
+// avrage of students
+let stdnt =[85,55,65,76,87,33];
+sum =0;
+for(let val of stdnt){
+sum += val;
+
+
+}
+console.log(sum);
+
+console.log(sum/stdnt.length);
+
+
+//Arrow function Syntax
+// const sum  =(a,b)=>{
+   //return  a+b;
+// }
+
+
+//Map method create a new array with performing some operation
+let ar = [2,3,4,5];
+let newar = ar.map((val)=>{
+   return val*val;
+    
+})
+console.log(newar);
+
+// filter gives new array by applying the filter conditon
+let ar1 = [2,3,4,5];
+let newar1 = ar.filter((val)=>{
+   return val%2 ===0;
+    
+})
+console.log(newar1);
