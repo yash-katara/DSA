@@ -160,3 +160,65 @@ let newar1 = ar.filter((val)=>{
     
 })
 console.log(newar1);
+
+
+
+
+
+// Asynchrounous operation
+setTimeout(()=>{
+    console.log("hello");
+    
+},3000);
+
+
+function getdata(id){
+    setTimeout(()=>{
+        console.log("id", id);
+        
+    },1000)
+}
+getdata(1);
+getdata(2);
+
+
+
+
+// Example of Promise Chaining
+const fetchData = () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve("Data fetched"), 1000);
+    });
+  };
+  
+  fetchData()
+    .then(result => {
+      console.log(result); // Output: Data fetched
+      return "Processing data";
+    })
+    .then(processedData => {
+      console.log(processedData); // Output: Processing data
+      return "Data processed";
+    })
+    .then(finalResult => {
+      console.log(finalResult); // Output: Data processed
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+
+
+
+function api(){
+    return new Promise((resolve,rej)=>{
+        setTimeout(()=>{
+            console.log("weatherdata");
+            resolve(200);
+        },3000)
+    })
+}
+async function callapi() {
+await api()
+
+}
+console.log(callapi());
