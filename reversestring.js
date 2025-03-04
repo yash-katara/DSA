@@ -7,8 +7,13 @@ console.log(reversestring("hello"))
 
 function reverseString(str) {
     let reversed = "";
+   
     for (let char of str) {
-        reversed = char + reversed ;
+       console.log(char);
+       
+        
+      reversed = char + reversed ;
+       
     }
     return reversed;
 }
