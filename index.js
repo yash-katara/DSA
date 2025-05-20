@@ -239,3 +239,33 @@ async function fetcheData() {
   }
   
   fetcheData();
+
+
+
+
+
+
+
+
+  getname();
+a();
+b();
+  let x =2;
+  function getname() {
+    console.log('yash katara');
+    
+  }
+  console.log(x);
+
+  function a (){
+   let  x = 3;
+    console.log(x);
+    
+  }
+
+
+  function b (){
+  let   x = 3;
+    console.log(x);
+    
+  }
