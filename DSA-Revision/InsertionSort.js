@@ -12,5 +12,5 @@ function InsertionSort(arr){
    return arr;
 }
 
-const arr = [64, 34, 25, 12, 22, 11, 90];
+const arr = [64, 34, 25, 10, 22, 11, 90];
 console.log("sorted array:", InsertionSort(arr));
