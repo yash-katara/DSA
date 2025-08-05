@@ -10,5 +10,5 @@ function PairSum(arr, target) {
     return pairs;
 }
 const arr = [1, 2, 3, 4, 5, 6];
-const target = 7;
+const target = 10;
 console.log(PairSum(arr, target)); // Output: [[1, 6], [2, 5], [3, 4]]
